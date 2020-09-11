@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  min-height: 100vh; }
+
+:root {
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --dark: #282828;
+  --lightpurple: #3500d3;
+  --blue: #240090;
+  --darkblue: #190061;
+  --darkerblue: #0c0032; }
+
+body {
+  background-color: var(--lightpurple); }
+
+.container {
+  max-width: 100rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-2);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  color: black; }
+
+.sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70rem; }
+  .sobre__contato {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column; }
+  .sobre__nome {
+    font-size: 5rem;
+    font-weight: 300; }
+  .sobre__icones {
+    display: flex;
+    justify-content: center; }
+  .sobre__link:link, .sobre__link:visited {
+    height: 2rem;
+    margin-right: 1.5rem;
+    width: 2rem;
+    text-decoration: none; }
+  .sobre__icone:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3); }
+  .sobre__icone {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1.5rem;
+    transition: all .2s; }
+  .sobre__texto {
+    font-size: 1.3rem;
+    margin-top: 10rem;
+    max-width: 40rem;
+    font-weight: 600; }
+  .sobre__texto-link {
+    color: var(--lightpurple);
+    text-decoration: none; }
+
+.habilidades {
+  margin-top: 5rem;
+  background: #f4f2f2;
+  background: linear-gradient(180deg, #f4f2f2 18%, #cccccc 50%); }
+  .habilidades__titulo {
+    font-size: 5rem;
+    font-weight: 300;
+    text-align: center; }
+  .habilidades__areas {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; }
+  .habilidades__1, .habilidades__2 {
+    display: flex;
+    width: 60%; }
+  .habilidades__area {
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 60%; }
+  .habilidades__area:not(:last-child) {
+    margin-right: 5rem; }
+  .habilidades__area-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem; }
+  .habilidades__item {
+    text-decoration: none; }
