@@ -115,6 +115,7 @@ body{
     &__item{
         text-decoration: none;
         font-size: 1.3rem;
+        color: var(--lightpurple);
     }
 
     &__item:not(:last-child){
