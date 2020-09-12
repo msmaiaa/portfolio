@@ -110,7 +110,7 @@ body {
     text-align: center;
     margin-bottom: 1.2rem;
     font-weight: 300; }
-  .habilidades__item {
+  .habilidades__item:link, .habilidades__item:visited {
     text-decoration: none;
     font-size: 1.3rem;
     color: var(--lightpurple); }

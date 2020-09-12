@@ -112,7 +112,7 @@ body{
         font-weight: 300;
     }
 
-    &__item{
+    &__item:link, &__item:visited{
         text-decoration: none;
         font-size: 1.3rem;
         color: var(--lightpurple);
