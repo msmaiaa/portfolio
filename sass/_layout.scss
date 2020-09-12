@@ -70,10 +70,12 @@ body{
     margin-top: 5rem;
     background: rgb(244,242,242);
     background: linear-gradient(180deg, rgba(244,242,242,1) 18%, rgba(204,204,204,1) 50%);
+    color: var(--color-grey-dark-1);
     &__titulo{
         font-size: 5rem;
         font-weight: 300;
         text-align: center;
+        margin-bottom: 10rem;
     }
 
     &__areas{
@@ -104,11 +106,18 @@ body{
 
 
     &__area-titulo{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        text-align: center;
         margin-bottom: 1.2rem;
+        font-weight: 300;
     }
 
     &__item{
         text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+    &__item:not(:last-child){
+        margin-bottom: .5rem;
     }
 }
