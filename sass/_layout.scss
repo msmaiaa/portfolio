@@ -8,6 +8,10 @@ body{
     background-color: var(--color-grey-light-2);
     box-shadow: 0 2rem 6rem rgba(0,0,0,.3);
     color: black;
+    @media only screen and (max-width: $bp-larger) {
+        margin: 0;       
+    }
+
 }
 
 .sobre{
@@ -16,16 +20,32 @@ body{
     align-items: center;
     flex-direction: column;
     height: 70rem;
+    @media only screen and (max-width: $bp-larger) {
+        height: 50rem;       
+    }
+    @media only screen and (max-width: $bp-small) {
+        height: 45rem;
+    }
     
     &__contato{
-        padding-top: 5rem;
+        margin-top: 5rem;
         display: flex;
         flex-direction: column;
+        @media only screen and (max-width: $bp-larger) {
+            margin-top: 0;   
+        }
     }
 
     &__nome{
         font-size: 5rem;
         font-weight: 300;
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 4rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3rem;
+            font-weight: 400;
+        }
     }
 
     &__icones{
@@ -38,6 +58,10 @@ body{
         margin-right: 1.5rem;
         width: 2rem;
         text-decoration: none;
+        @media only screen and (max-width: $bp-largest) {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
     }
 
     &__icone:hover{
@@ -57,6 +81,13 @@ body{
         margin-top: 10rem;
         max-width: 40rem;
         font-weight: 600;
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 1.2rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.2rem;
+            max-width: 30rem;
+        }
     }
 
     &__texto-link{
@@ -75,10 +106,19 @@ body{
         font-weight: 300;
         text-align: center;
         margin-bottom: 10rem;
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 4rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: 5rem;
+        }
     }
 
     &__areas{
-        margin-top: 5rem;
+        margin-top: 4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -88,6 +128,14 @@ body{
     &__1, &__2{
         display: flex;
         width: 60%;
+        @media only screen and (max-width: $bp-larger) {
+            width: 80%;
+        }
+        @media only screen and (max-width: $bp-small) {
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
     }
 
 
@@ -97,10 +145,16 @@ body{
         flex-direction: column;
         align-items: center;
         flex-basis: 60%;
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: 5rem;
+        }
     }
 
     &__area:not(:last-child){
         margin-right: 5rem;
+        @media only screen and (max-width: $bp-small) {
+            margin-right: 0;
+        }
     }
 
 
@@ -109,6 +163,10 @@ body{
         text-align: center;
         margin-bottom: 1.2rem;
         font-weight: 300;
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+            margin-bottom: .6rem;
+        }
     }
 
     &__item{
@@ -118,6 +176,9 @@ body{
         text-decoration: none;
         font-size: 1.3rem;
         color: var(--lightpurple);
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.2rem;
+        }
     }
 
     &__item:hover{
@@ -146,6 +207,15 @@ body{
         text-align: center;
         margin-bottom: 10rem;
         color: var(--color-grey-dark-1);
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 4rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 5rem;
+        }
+        
     }
 
     &__itens{
@@ -160,12 +230,24 @@ body{
         justify-content: center;
         max-width: 80%;
         margin-bottom: 12rem;
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__gif{
         width: 40rem;
         height: 25rem;
         transition: all .2s;
+        @media only screen and (max-width: $bp-larger) {
+            width: 35rem;
+            height: 20rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            width: 30rem;
+            height: 15rem;
+        }
     }
 
     &__gif:hover{
@@ -177,20 +259,38 @@ body{
         margin-left: 3.5rem;
         display: flex;
         flex-direction: column;
+        @media only screen and (max-width: $bp-medium) {
+            align-items: center;
+            margin-left: 0;
+        }
     }
 
     &__resumo-titulo{
         font-size: 2.5rem;
         font-weight: 300;
         color: var(--color-grey-dark-1);
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2rem;
+            margin: .5rem 0 1rem 0;
+        }
     }
 
     &__texto{
         font-size: 1.5rem;
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 1.2rem;
+        }
     }
 
     &__demo{
         margin-top: auto;
+        display: flex;
+        @media only screen and (max-width: $bp-largest) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
     }
 
     &__demo-btn:link, &__demo-btn:visited{
@@ -203,6 +303,12 @@ body{
         box-shadow: 0 1rem 1rem rgba(0,0,0,.3);
         transition: all .2s;
         transform: translateY(-.2rem);
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        
     }
 
     &__demo-btn:active{
@@ -210,12 +316,22 @@ body{
         transform: translateY(0);
     }
 
+    
+
     &__source:link, &__source:visited{
         text-decoration: none;
         color: var(--lightpurple);
         margin-left: 1.6rem;
         text-align: center;
         font-size: 1.3rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 1.2rem;
+            margin-bottom: .5rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            margin-left: 0;
+        }
     }
 
     &__source-disabled{
@@ -224,6 +340,13 @@ body{
         margin-left: 1.6rem;
         text-align: center;
         font-size: 1.3rem;
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 1.2rem;
+            margin-bottom: .5rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            margin-left: 0;
+        }
     }
 
     &__source > img, &__source-disabled > img{
